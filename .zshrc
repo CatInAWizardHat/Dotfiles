@@ -45,6 +45,7 @@ export PATH="$PATH:$HOME/.local/bin/"
 export PATH="$PATH:/usr/lib/zig/"
 export PATH="$PATH:/opt/obsidian/"
 export PATH="$PATH:/opt/zen/"
+export PATH="$PATH:/opt/jetbrains-toolbox/"
 export PATH="$PATH:/opt/apache-maven-3.9.9/bin/"
 
 # Keybindings
@@ -74,6 +75,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias sqldeveloper='~/.local/bin/sqldeveloper/sqldeveloper.sh'
+alias cl='clear'
+alias lls='ls -lah --color'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
