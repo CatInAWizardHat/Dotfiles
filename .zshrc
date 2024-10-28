@@ -75,8 +75,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color'
 alias sqldeveloper='~/.local/bin/sqldeveloper/sqldeveloper.sh'
-alias cl='clear'
-alias lls='ls -lah --color'
+alias cls='clear'
+alias ll='ls -lah --color'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
