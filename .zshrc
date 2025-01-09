@@ -38,15 +38,7 @@ autoload -U compinit && compinit
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Adding to PATH
-export PATH="$PATH:/opt/nvim/"
-export PATH="$PATH:/opt/bitwarden/"
-export PATH="$PATH:$HOME/.local/bin/"
-. "$HOME/.cargo/env"
-export PATH="$PATH:/usr/lib/zig/"
-export PATH="$PATH:/opt/obsidian/"
-export PATH="$PATH:/opt/zen/"
-export PATH="$PATH:/opt/jetbrains-toolbox/"
-export PATH="$PATH:/opt/apache-maven-3.9.9/bin/"
+export PATH="$PATH:/opt/nvim-linux64/"
 
 # Keybindings
 bindkey -e
@@ -74,9 +66,9 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color'
-alias sqldeveloper='~/.local/bin/sqldeveloper/sqldeveloper.sh'
 alias cls='clear'
 alias ll='ls -lah --color'
+alias nvim='/opt/nvim-linux64/bin/nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
