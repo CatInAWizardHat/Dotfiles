@@ -38,7 +38,7 @@ autoload -U compinit && compinit
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Adding to PATH
-export PATH="$PATH:/opt/nvim-linux64/"
+
 
 # Keybindings
 bindkey -e
@@ -68,14 +68,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias cls='clear'
 alias ll='ls -lah --color'
-alias nvim='/opt/nvim-linux64/bin/nvim'
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Source environment & .profile files
 source /etc/environment
-source ~/.profile
+# source ~/.profile
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
