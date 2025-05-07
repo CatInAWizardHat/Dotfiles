@@ -39,6 +39,28 @@ autoload -U compinit && compinit
 
 # Adding to PATH
 
+# app specific exports
+export GRADLE_HOME="/opt/gradle/gradle-8.13"
+
+# path exports
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="/opt/amazon-corretto-21.0.6.7.1-linux-x64/bin:$PATH"
+export PATH="$GRADLE_HOME/bin:$PATH"
+export PATH="$PATH:/home/engineeringket/.local/bin"
+export PATH="$HOME/development/flutter/bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
+
+# Aliases
+alias ls='ls --color'
+alias cls='clear'
+alias ll='ls -lah --color'
+
+# user defined aliases
+alias nvim='/opt/nvim-linux-x86_64/bin/nvim '
+alias sys_python='python3'
+alias python='python3.13'
+alias android-studio='/opt/android-studio/bin/studio.sh'
+. "$HOME/.cargo/env"
 
 # Keybindings
 bindkey -e
@@ -64,11 +86,12 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
-# Aliases
-alias ls='ls --color'
-alias cls='clear'
-alias ll='ls -lah --color'
+# node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+[ -f "/home/engineeringket/.ghcup/env" ] && . "/home/engineeringket/.ghcup/env" # ghcup-env
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
