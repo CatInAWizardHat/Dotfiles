@@ -53,7 +53,7 @@ export PATH="$PATH:/usr/local/go/bin"
 # Aliases
 alias ls='ls --color'
 alias cls='clear'
-alias ll='ls -lah --color'
+alias lls='ls -lah --color'
 
 # user defined aliases
 alias nvim='/opt/nvim-linux-x86_64/bin/nvim '
