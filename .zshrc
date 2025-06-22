@@ -39,28 +39,16 @@ autoload -U compinit && compinit
 
 # Adding to PATH
 
-# app specific exports
-export GRADLE_HOME="/opt/gradle/gradle-8.13"
+# App Specific Exports
 
-# path exports
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export PATH="/opt/amazon-corretto-21.0.6.7.1-linux-x64/bin:$PATH"
-export PATH="$GRADLE_HOME/bin:$PATH"
+# Path exports
 export PATH="$PATH:/home/engineeringket/.local/bin"
-export PATH="$HOME/development/flutter/bin:$PATH"
 export PATH="$PATH:/usr/local/go/bin"
 
 # Aliases
 alias ls='ls --color'
 alias cls='clear'
 alias lls='ls -lah --color'
-
-# user defined aliases
-alias nvim='/opt/nvim-linux-x86_64/bin/nvim '
-alias sys_python='python3'
-alias python='python3.13'
-alias android-studio='/opt/android-studio/bin/studio.sh'
-. "$HOME/.cargo/env"
 
 # Keybindings
 bindkey -e
