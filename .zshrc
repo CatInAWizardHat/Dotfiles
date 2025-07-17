@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# When running end-4 hyprland config
+source ~/.config/zshrc.d/auto-Hypr.sh
+source ~/.config/zshrc.d/dots-hyprland.zsh
+
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -42,8 +46,10 @@ autoload -U compinit && compinit
 # App Specific Exports
 
 # Path exports
-export PATH="$PATH:/home/engineeringket/.local/bin"
-export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/.emacs.d/bin"
+# export PATH="$PATH:$HOME/.opam/default/bin"
 
 # Aliases
 alias ls='ls --color'
@@ -75,11 +81,11 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-[ -f "/home/engineeringket/.ghcup/env" ] && . "/home/engineeringket/.ghcup/env" # ghcup-env
+# [ -f "/home/engineeringket/.ghcup/env" ] && . "/home/engineeringket/.ghcup/env" # ghcup-env
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -88,10 +94,13 @@ export NVM_DIR="$HOME/.nvm"
 source /etc/environment
 # source ~/.profile
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Rust/Cargo
+. "$HOME/.cargo/env"
 
-# When running end-4 hyprland ocnfig
-source ~/.config/zshrc.d/auto-Hypr.sh
-source ~/.config/zshrc.d/dots-hyprland.zsh
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/engineeringket/.opam/opam-init/init.zsh' ]] || source '/home/engineeringket/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
