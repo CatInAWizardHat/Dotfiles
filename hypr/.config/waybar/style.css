@@ -1,0 +1,47 @@
+/*
+ * A minimal, monochromatic Waybar theme
+ */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+#waybar {
+    /* background: #1e1e2e; Same dark background as Wofi */
+    /* color: #cdd6f4;      Same light text color */
+    background: #000000;
+    color: 	#FFFFFF;
+}
+
+/* Style for each module */
+#workspaces,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#network {
+    padding: 0 10px;
+    margin: 2px 0;
+}
+
+/* Style for the active workspace button */
+#workspaces button.active {
+    background-color: #585b70; /* Highlight color */
+    border-radius: 8px;
+}
+
+#workspaces button:hover {
+    background-color: #45475a;
+    border-radius: 8px;
+}
+
+#cpu,
+#memory {
+    background-color: #313244;
+    border-radius: 8px;
+    margin: 2px 3px;
+}

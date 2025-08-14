@@ -1,0 +1,54 @@
+/*
+ * A minimal, monochromatic Wofi theme using standard GTK CSS
+ */
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+
+#window {
+    /* background-color: #1e1e2e; /* A dark, off-black background */
+    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid #585b70;
+}
+
+#input {
+    /* color: #cdd6f4; /* Light text color */
+    color: #FFFFFF
+    background-color: #313244; /* Slightly lighter background for input */
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#inner-box {
+    margin: 5px;
+}
+
+#outer-box {
+    margin: 10px;
+}
+
+#scroll {
+    margin-top: 5px;
+}
+
+#entry {
+    color: #cdd6f4; /* Default text color for entries */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#entry:selected {
+    /* background-color: #585b70; /* Highlight color for selected entry */
+    background-color: #808080;
+    color: #cdd6f4;
+}
+
+#text:selected {
+    color: #cdd6f4;
+}
+
