@@ -44,9 +44,10 @@ autoload -U compinit && compinit
 
 # app specific exports
 
+
 # path exports
 export PATH="$PATH:/home/engineeringket/.local/bin"
-export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/go/bin"
 
 # Aliases
 alias ls='ls --color'
