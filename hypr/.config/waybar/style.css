@@ -6,7 +6,7 @@
     border: none;
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font";
-    font-size: 14px;
+    font-size: 12px;
     min-height: 0;
 }
 
@@ -30,13 +30,13 @@
 
 /* Style for the active workspace button */
 #workspaces button.active {
-    background-color: #585b70; /* Highlight color */
-    border-radius: 8px;
+    background-color: #FFFFFF; /* Highlight color */
+    border-radius: 10px;
 }
 
 #workspaces button:hover {
     background-color: #45475a;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 #cpu,
