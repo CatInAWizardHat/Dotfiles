@@ -48,6 +48,7 @@ autoload -U compinit && compinit
 # path exports
 export PATH="$PATH:/home/engineeringket/.local/bin"
 export PATH="$PATH:$HOME/go/bin"
+export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 
 # Aliases
 alias ls='ls --color'
@@ -94,3 +95,6 @@ export NVM_DIR="$HOME/.nvm"
 
 . "$HOME/.cargo/env"
 eval "$(/home/ket/.local/bin/mise activate zsh)"
+. "/home/ket/.local/share/bob/env/env.sh"
+# ~/.zprofile
+eval "$(mise activate zsh --shims)"
