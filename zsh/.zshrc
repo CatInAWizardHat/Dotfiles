@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export VISUAL=nvim
+export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Set the directory we want to store zinit and plugins
@@ -44,11 +44,7 @@ autoload -U compinit && compinit
 
 # app specific exports
 
-
 # path exports
-export PATH="$PATH:/home/engineeringket/.local/bin"
-export PATH="$PATH:$HOME/go/bin"
-export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 
 # Aliases
 alias ls='ls --color'
@@ -87,14 +83,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
 # Source environment & .profile files
 source /etc/environment
+
 # source ~/.profile
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-. "$HOME/.cargo/env"
-eval "$(/home/ket/.local/bin/mise activate zsh)"
-. "/home/ket/.local/share/bob/env/env.sh"
 # ~/.zprofile
-eval "$(mise activate zsh --shims)"
