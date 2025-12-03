@@ -8,5 +8,5 @@ Specifically for Linux systems using zsh and the Neovim native package manager
 - unzip
 - C Compiler
 - ripgrep
+- fzf
 - Clipboard tool
-
