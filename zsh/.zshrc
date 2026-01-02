@@ -50,6 +50,7 @@ autoload -U compinit && compinit
 alias ls='ls --color'
 alias cls='clear'
 alias lls='ls -lah --color'
+alias python='python3'
 
 # user defined aliases
 
@@ -82,7 +83,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Source environment & .profile files
-source /etc/environment
+[[ ! -f /etc/environment ]] || source /etc/environment
 
-# source ~/.profile
+source ~/.profile
 # ~/.zprofile
