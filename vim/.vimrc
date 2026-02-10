@@ -140,6 +140,18 @@ let lspServers = [
     \   filetype: ['c', 'cpp'],
     \   path: 'clangd',
     \   args: ['--background-index']
+    \ },
+    \ #{
+    \   name: 'rust-analyzer',
+    \   filetype: ['rust'],
+    \   path: 'rust-analyzer',
+    \   args: []
+    \ },
+    \ #{
+    \   name: 'jdtls',
+    \   filetype: ['java'],
+    \   path: 'jdtls',
+    \   args: []
     \ }
     \ ]
 

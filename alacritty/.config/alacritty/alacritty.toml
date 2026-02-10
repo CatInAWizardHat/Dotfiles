@@ -1,2 +1,18 @@
 [font]
-size = 9
+size = 8
+
+[font.bold]
+family = "Source Code Pro Medium"
+style = "Bold"
+
+[font.bold_italic]
+family = "Source Code Pro Medium"
+style = "Bold Italic"
+
+[font.italic]
+family = "Source Code Pro Medium"
+style = "Italic"
+
+[font.normal]
+family = "Source Code Pro Medium"
+style = "Regular"
