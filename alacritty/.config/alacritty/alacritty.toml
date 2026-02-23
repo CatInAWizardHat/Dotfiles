@@ -16,3 +16,7 @@ style = "Italic"
 [font.normal]
 family = "Source Code Pro Medium"
 style = "Regular"
+
+[window]
+decorations = "Transparent"
+opacity = 0.25
