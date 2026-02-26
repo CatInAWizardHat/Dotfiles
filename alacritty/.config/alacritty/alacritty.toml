@@ -19,4 +19,5 @@ style = "Regular"
 
 [window]
 decorations = "Transparent"
-opacity = 0.25
+opacity = 0.75
+
