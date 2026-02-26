@@ -52,6 +52,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'
 
     Plug 'ghifarit53/tokyonight-vim'
+    Plug 'morhetz/gruvbox'
 
     Plug 'junegunn/fzf'
     Plug 'junegunn/fzf.vim'
@@ -62,7 +63,17 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-colorscheme tokyonight
+set termguicolors
+let g:gruvbox_italic = 1
+let g:gruvbox_transparent_bg = 1
+let g:gruvbox_underline = 1
+set background=dark
+
+colorscheme gruvbox
+" let g:tokyonight_style = 'night'
+" let g:tokyonight_enable_italic = 1
+
+" colorscheme tokyonight
 " }}}
 
 " MAPPINGS ------------------------------------------------------------------ {{{
@@ -107,7 +118,7 @@ augroup END
 " STATUS LINE ------------------------------------------------------------------ {{{
 set laststatus=2
 let g:lightline = {
-            \ 'colorscheme' : 'tokyonight',
+            \ 'colorscheme' : 'gruvbox',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
             \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
