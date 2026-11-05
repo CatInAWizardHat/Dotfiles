@@ -157,12 +157,6 @@ let lspServers = [
     \   filetype: ['rust'],
     \   path: 'rust-analyzer',
     \   args: []
-    \ },
-    \ #{
-    \   name: 'jdtls',
-    \   filetype: ['java'],
-    \   path: 'jdtls',
-    \   args: []
     \ }
     \ ]
 
