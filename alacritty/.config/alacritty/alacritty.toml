@@ -1,23 +1,26 @@
 [font]
-size = 8
+size = 11
 
 [font.bold]
-family = "Source Code Pro Medium"
+family = "IosevkaTerm Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "Source Code Pro Medium"
+family = "IosevkaTerm Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "Source Code Pro Medium"
+family = "IosevkaTerm Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "Source Code Pro Medium"
+family = "IosevkaTerm Nerd Font"
 style = "Regular"
 
 [window]
 decorations = "Transparent"
 opacity = 0.75
+
+[shell]
+program = "tmux"
 
